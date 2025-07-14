@@ -1,0 +1,779 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+/*Inizio Blocco Navbar*/
+/* Logo posizionato nella navbar */
+.nav-logo {
+  height: 70px; /* Imposta l’altezza massima del logo per uniformità visiva */
+}
+
+/* Contenitore principale della navbar */
+.navbar {
+  display: flex; /* Abilita layout flessibile per la disposizione degli elementi */
+  justify-content: space-between; /* Distribuisce lo spazio tra gli elementi agli estremi */
+  align-items: center; /* Allinea verticalmente gli elementi al centro */
+  padding: 30px 40px; /* Spaziatura interna orizzontale e verticale */
+  background-color: #611d00; /* Colore di sfondo marrone scuro */
+  font-weight: bold; /* Applica maggiore spessore al testo */
+  font-family: 'Georgia', serif; /* Font elegante e classico per la navbar */
+  color: #ffffff; /* Colore del testo bianco per contrasto sullo sfondo */
+}
+
+ /* Contenitore delle icone di navigazione */
+.nav-icons {
+  display: flex; /* Disposizione flessibile delle icone in riga */
+  gap: 20px; /* Spazio orizzontale tra le icone */
+  font-size: 27px; /* Dimensione delle icone per garantire visibilità */
+  cursor: default; /* Mantiene il cursore standard, non cliccabile per queste icone */
+  color: #fff; /* Colore bianco per le icone */
+}
+
+/* Icona della lente di ingrandimento nella navbar */
+.nav-lente {
+  width: 44px; /* Larghezza specifica per uniformare la dimensione dell’icona */
+  height: auto; /* Altezza proporzionata per mantenere il rapporto dell’immagine */
+  filter: brightness(1); /* Mantiene la luminosità originale dell’immagine */
+}
+
+ /* Riga divisoria sotto la navbar */
+.navbar-line {
+  border: 0.5px solid #5c1c0b33; /* Linea sottile di colore marrone con opacità */
+  margin: 0; /* Rimuove spaziatura esterna */
+}
+/*Fine Blocco Navbar*/
+
+/*Inizio Tre Blocchi Storia*/
+/* Contenitore principale della sezione storia Ferrero */
+  .storia-ferrero {
+    padding: 40px 20px; /* Spaziatura interna per separare il contenuto dai bordi */
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+
+  /* Stile del titolo principale della sezione storia Ferrero */
+  .storia-ferrero h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #6b3e26; 
+  }
+
+  /* Contenitore dei tre blocchi disposti in riga */
+  .blocchi-storia {
+    display: flex; /* Attiva il layout flessibile per disporre i blocchi su una riga */
+    flex-wrap: wrap; /* Permette il ritorno a capo su schermi più piccoli */
+    justify-content: center; /* Centra orizzontalmente i blocchi */
+    gap: 30px; /* Spazio orizzontale e verticale tra i blocchi */
+  }
+  
+ /* Singolo blocco all’interno della sezione storia */
+.blocco {
+  flex: 1 1 300px; /* Imposta larghezza flessibile minima di 300px */
+  background-color: #fff; /* Sfondo bianco per risaltare sul grigio */
+  padding: 20px; /* Spaziatura interna */
+  border-radius: 10px; /* Arrotonda gli angoli del blocco */
+  max-width: 350px; /* Limita la larghezza massima per uniformità */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Aggiunge un’ombra leggera per profondità visiva */
+  transition: transform 0.2s; /* Applica un’animazione fluida al movimento */
+}
+
+ /* Effetto sollevamento del blocco al passaggio del mouse */
+.blocco:hover {
+  transform: translateY(-4px); /* Sposta il blocco leggermente verso l’alto */
+}
+
+/* Stile del titolo all’interno del blocco */
+.blocco h3 {
+  color: #8B4513; /* Marrone scuro per risaltare sullo sfondo bianco */
+  margin-bottom: 10px; /* Spazio inferiore per separare il titolo dal testo */
+}
+
+/* Stile del testo all’interno del blocco */
+.blocco p {
+  font-size: 1.1rem; /* Dimensione del testo per buona leggibilità */
+  line-height: 1.6; /* Altezza della linea per rendere il testo più scorrevole */
+  color: #333; /* Colore neutro scuro per contrasto e leggibilità */
+}
+
+ /* Stile dell’immagine all’interno del blocco storia */
+.storia-img {
+  width: 100%; /* Occupa tutta la larghezza del contenitore */
+  height: 200px; /* Altezza fissa per uniformità tra i blocchi */
+  object-fit: cover; /* Ritaglia e adatta l’immagine mantenendo le proporzioni */
+  border-radius: 8px; /* Arrotonda gli angoli dell’immagine */
+  margin-bottom: 15px; /* Spazio inferiore per separare l’immagine dal testo */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Aggiunge un’ombra leggera per profondità */
+}
+
+/* Variante di immagine per il secondo blocco storia*/
+.storia-img2 {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center 65%; /* Sposta il focus dell’immagine verso la parte bassa */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Variante di immagine per il terzo blocco storia */
+.storia-img3 {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center 2%; /* Sposta il focus dell’immagine verso la parte alta */
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titolo principale dell’intera sezione storia */
+.titolo-storia {
+  font-weight: 900; /* Peso marcato per evidenziare il titolo */
+  font-size: 2.5rem; /* Dimensione significativa per risalto visivo */
+  color: #5b2c04; /* Marrone scuro, coerente con la palette cromatica */
+  text-align: center; /* Allinea orizzontalmente al centro */
+  letter-spacing: 1px; /* Spaziatura tra le lettere per migliore leggibilità */
+  text-transform: uppercase; /* Trasforma il testo in lettere maiuscole */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); /* Aggiunge ombra per evidenziare il titolo sullo sfondo */
+}
+/* Fine Tre Blocchi Storia */
+
+  /*Inizio Blocco sostenibilità*/
+  /* Titolo principale della sezione sostenibilità */
+  .titolo-sostenibilita {
+    font-weight: 900;
+    font-size: 2.1rem;
+    color: #5b2c04;
+    text-align: center; /* Centra il testo orizzontalmente */
+    letter-spacing: 1px; /* Spaziatura tra le lettere per una migliore leggibilità */
+    text-transform: uppercase; /* Trasforma il testo in maiuscolo per maggiore impatto visivo */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); /* Applica un’ombra per migliorare il contrasto e la leggibilità */
+    margin: 3rem 0; /* Spaziatura superiore e inferiore per separare il titolo dagli altri elementi */
+  }
+  
+/* Blocco introduttivo testuale della sezione sostenibilità */
+.intro-sostenibilita {
+    max-width: 1100px;
+    margin: 0 auto 2rem auto; /* Centra il blocco orizzontalmente e aggiunge spazio inferiore */
+    padding: 1.2rem;
+    font-size: 1.25rem;
+    font-weight: 500; /* Peso intermedio per dare corpo al testo */
+    line-height: 1.8; /* Altezza della linea per rendere il testo più scorrevole */
+    text-align: center;
+    color: #3e2608;
+    background-color: #fff;
+    border-left: 5px solid #3e2608; /* Bordo laterale per evidenziare il blocco */
+    border-radius: 6px; /* Arrotonda gli angoli del blocco */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45); /* Aggiunge ombra per dare profondità visiva */
+  }
+
+  .sezione-sostenibilita {
+  background-color: #5c1c0b;
+  padding: 60px 20px; /* Spaziatura interna superiore e laterale */
+  text-align: center; /* Allinea il contenuto orizzontalmente al centro */
+}
+
+.sezione-sostenibilita h2 {
+  color: #3e2608;
+  font-size: 2.5rem;
+  text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+  letter-spacing: 1px; /* Spaziatura tra lettere per migliorare leggibilità */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombra più marcata */
+  margin-bottom: 2rem; /* Spazio inferiore per separare il titolo dal contenuto successivo */
+}
+
+/* Variante parallax della sezione sostenibilità */
+.sezione-sostenibilita.parallax {
+  background-image: url("Immagini/sfondo.png"); 
+  background-attachment: fixed; /* Blocca lo sfondo durante lo scroll per creare l’effetto parallasse */
+  background-size: cover; /* Adatta l’immagine per coprire l’intera area del contenitore */
+  background-position: center; /* Centra l’immagine di sfondo */
+  background-repeat: no-repeat; /* Evita la ripetizione dell’immagine */
+  position: relative; /* Imposta il contesto di posizionamento per eventuali elementi assoluti */
+  min-height: 100vh; /* Altezza minima pari all’altezza della finestra */
+  display: flex; /* Utilizza il layout flessibile */
+  align-items: center; /* Allinea verticalmente il contenuto al centro */
+  justify-content: center; /* Allinea orizzontalmente il contenuto al centro */
+  padding: 60px 20px; /* Spaziatura interna */
+}
+
+/* Overlay bianco semi-trasparente sopra il parallax per migliorare la leggibilità */
+.overlay-sostenibilita {
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 40px 30px;
+  border-radius: 10px; /* Arrotonda gli angoli */
+  max-width: 1000px; /* Limita la larghezza per garantire leggibilità su schermi grandi */
+  margin: auto; /* Centra l’overlay orizzontalmente */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* Aggiunge ombra per dare profondità all’overlay */
+}
+
+/* Paragrafo all’interno di un blocco parallax */
+.parallax-box p {
+  color: #3e2608;
+  font-size: 1.25rem; /* Dimensione del testo per leggibilità */
+  line-height: 1.8; /* Altezza della linea per una lettura più fluida */
+  font-weight: 500; /* Peso intermedio per maggiore chiarezza */
+}
+
+/* Contenitore del link per il download o altre azioni */
+.link-scarica {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #4a2c06; 
+}
+
+/* Stile del link contenuto all’interno del blocco link-scarica */
+.link-scarica a {
+  color: #8b4513; 
+  text-decoration: underline; /* Sottolinea il testo per indicare che è cliccabile */
+  font-weight: bold; /* Applica maggiore peso al testo per evidenziarlo */
+  cursor: pointer; /* Cambia il cursore per indicare l’interattività */
+}
+/*Fine Blocco sostenibilità*/
+
+/* Inizio 4 blocchi report sostenibilità*/
+/*Contenitore dei blocchi di sostenibilità: griglia a 2 colonne*/
+ .sostenibilita-blocchi {
+  display: grid; /* Imposta un layout a griglia */
+  grid-template-columns: repeat(2, 1fr); /* Due colonne di larghezza uguale */
+  gap: 30px; /* Spaziatura tra i blocchi */
+  padding: 40px 20px; /* Spaziatura interna laterale e verticale */
+  max-width: 1100px; /* Larghezza massima del contenitore */
+  margin: 0 auto; /* Centra il contenitore orizzontalmente */
+}
+
+/* Singolo blocco di sostenibilità */
+.blocco-sostenibilita {
+  flex: 1 1 300px; /* Imposta una base flessibile minima di 300px */
+  max-width: 350px; /* Larghezza massima per ogni blocco */
+  background-color: #ffffff;
+  padding: 25px;
+  border-left: 6px solid #8B4513; /* Bordo laterale marrone per evidenziare il blocco */
+  border-radius: 8px; /* Arrotonda gli angoli */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Aggiunge ombra per profondità */
+  transition: transform 0.2s; /* Anima il sollevamento al passaggio del mouse */
+}
+
+/* Effetto sollevamento al passaggio del mouse */
+.blocco-sostenibilita:hover {
+  transform: translateY(-4px); /* Sposta leggermente verso l’alto il blocco */
+}
+
+/* Titolo del blocco di sostenibilità */
+.blocco-sostenibilita h3 {
+  font-size: 1.3rem;
+  color: #5c1c0b;
+  margin-bottom: 10px;
+}
+
+/* Paragrafo dentro il blocco di sostenibilità */
+.blocco-sostenibilita p {
+  font-size: 1.05rem;
+  line-height: 1.7; /* Altezza della linea per leggibilità */
+  color: #333;
+}
+
+/* Struttura del blocco copertina*/
+.blocco-copertina {
+  display: flex; /* Imposta un layout flessibile orizzontale */
+  flex-direction: row; /* Disposizione degli elementi su riga */
+  padding: 0;
+  margin: 0 auto; /* Centra il blocco orizzontalmente */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Aggiunge ombra */
+  border-radius: 8px; /* Arrotonda gli angoli */
+  overflow: hidden; /* Nasconde eventuali elementi che fuoriescono */
+  max-width: 1000px;
+  background-color: #fff;
+  min-height: 260px; /* Altezza minima per uniformità visiva */
+  height: auto; /* Altezza adattabile al contenuto */
+  align-items: flex-start; /* Allinea gli elementi in alto */
+  gap: 16px; /* Spaziatura orizzontale tra le colonne */
+}
+
+/* Parte immagine del blocco copertina*/
+.img-copertina {
+  flex: 1 1 40%; /* Imposta larghezza flessibile al 40% */
+  height: 100%;
+}
+
+/* Immagine dentro il blocco copertina*/
+.img-copertina img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Adatta e ritaglia l’immagine per coprire l’area */
+  object-position: center 75%; /* Centra l’immagine e mostra la parte inferiore */
+  display: block; /* Evita spazi indesiderati sotto l’immagine */
+}
+
+/* Parte testo della copertina*/
+.testo-copertina {
+  flex: 1 1 60%; /* Occupa il restante spazio della copertina */
+  padding: 20px 15px 20px 20px; 
+  display: flex;
+  flex-direction: column; /* Dispone il testo su più righe verticali */
+  justify-content: center; /* Centra verticalmente il testo */
+}
+
+/* Icone emoji nella copertina o nei blocchi */
+.emoji-icon {
+  height: 2.1em;
+  vertical-align: middle; /* Allineamento verticale con il testo */
+  margin-right: 5px; /* Spazio tra icona e testo */
+}
+
+/* Contenitore generico per piccole icone vicino ai titoli */
+.blocco-icon {
+  display: inline-block; /* Rende il contenitore inline ma con proprietà da blocco */
+  vertical-align: middle; /* Allinea verticalmente con il testo */
+  margin-right: 8px; /* Spazio tra icona e testo */
+}
+
+/* Layout per titolo con icona vicino */
+.titolo-blocco {
+  display: flex; /* Imposta layout flessibile */
+  align-items: center; /* Allinea verticalmente gli elementi */
+  gap: 1px; /* spazio fra icona e titolo */
+  
+}
+
+/* Stile per tutti i titoli dentro titolo-blocco */
+/* Per tutti */
+.titolo-blocco h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #5c1c0b;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Icona all’interno dei blocchi titolo */
+.blocco-icon img {
+   height: 2.2em;
+  width: auto;
+  display: block; /* Rimuove spazi indesiderati */
+  margin-top: -4px;
+}
+
+/* Layout titolo sezione energia */
+.titolo-energia {
+  display: flex; /* Layout flessibile */
+  align-items: center;
+  gap: 1px; /* Spazio minimo fra icona e testo */
+  margin-bottom: 12px;
+}
+
+/* Contenitore icona energia */
+.img-icona-energia {
+  width: auto; /* Larghezza adattabile */
+  height: 40px;
+  flex-shrink: 0; /* Evita che il contenitore si restringa */
+}
+
+/* Immagine dentro il contenitore icona energia */
+.img-icona-energia img {
+  height: 70%; /* Altezza relativa al contenitore */
+  width: auto; /* Larghezza proporzionata */
+  object-fit: contain; /* Adatta l’immagine senza ritagliarla */
+  display: block; /* Evita spazi indesiderati */
+}
+
+/* Titolo energia specifico (per blocchi energia) */
+.titolo-energia h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #4A1D0F;
+  line-height: 1.2; /* Altezza delle righe per maggiore compattezza */
+  margin-top: -6px; /* Leggera regolazione verso l’alto per allineamento */
+}
+
+/* Stile specifico per l’emoji mela nella copertina */
+.testo-copertina img[alt="Emoji-mela"] {
+   height: 2.5em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+/* Stile specifico per icona persone nella copertina */
+.testo-copertina img[alt="Icona persone"] {
+   height: 2.2em;
+  width: auto;
+  vertical-align: middle; /* Allineamento verticale con il testo */
+  margin-right: 6px;
+  display: inline-block; /* Mantiene l’allineamento inline con il testo */
+}
+
+/* Titolo testo dentro la copertina */
+.testo-copertina h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #5c1c0b;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Modifica energia rinnovabile*/
+/* Piccola regolazione verso l’alto per il titolo energia,
+   per allineare meglio testo e icona */
+.energia-titolo {
+  transform: translateY(-4px);
+}
+
+/*Allineare titolo e paragrafo blocchi sotto*/
+.titolo-sotto {
+  margin-top: 4px; 
+}
+
+/* Margine sopra per il titolo sotto i blocchi */
+.titolo-sotto h3 {
+  transform: translateY(1px); 
+}
+
+/* Struttura verticale tra titolo e paragrafo */
+.contenuto-testo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  height: 100%;
+}
+
+/* Spazio sopra il paragrafo nei blocchi */
+.contenuto-testo p {
+  margin-top: 1.2rem; 
+}
+
+.sostenibilita-blocchi {
+    align-items: stretch; /* Imposta i blocchi figli affinché abbiano tutti la stessa altezza, uniformando visivamente le righe della griglia */ 
+}
+
+/* Titolo piccolo per i valori di consumo o dati numerici */
+.titolo-consumo {
+  font-size: 1.2em;       
+  white-space: nowrap; /* Impedisce la suddivisione in più righe */
+  font-weight: 700;
+  color: #5c1c0b;
+}
+
+/* Se un blocco sostenibilità ha anche lo stile blocco-copertina,
+   si limita la larghezza massima */
+.blocco-sostenibilita.blocco-copertina {
+  max-width: 800px;
+}
+/*Fine 4 blocchi report sostenibilità*/
+
+/* Inzio Blocco Nido – Effetto Parallax */
+.contenitore-nido-doppio {
+  display: flex; /* Imposta il layout flessibile per organizzare gli elementi in colonna */
+  flex-direction: column; /* Disponi gli elementi figli in verticale */
+  gap: 30px; /* Spaziatura verticale tra gli elementi figli */
+  max-width: 1100px; /* Limita la larghezza massima del contenitore per migliore leggibilità su schermi grandi */
+  margin: 0 auto; /* Centra il contenitore orizzontalmente nella pagina */
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 40px; /* Spaziatura interna del contenitore */
+  border-radius: 15px; /* Arrotonda gli angoli del contenitore per un effetto visivo più morbido */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* Aggiunge un’ombra per dare profondità e risalto al contenitore */
+}
+
+/* Riga dedicata al titolo */
+.riga-titolo-nido {
+  width: 100%; /* Occupa l’intera larghezza del contenitore */
+}
+
+/* Stile del titolo principale all’interno del blocco Nido */
+.titolo-nido-box {
+  font-size: 2rem; /* Imposta la dimensione del titolo per garantire visibilità */
+  color: #4a1d0f;
+  font-weight: 800; /* Peso marcato per conferire importanza al titolo */
+  margin-bottom: 20px; /* Spazio inferiore per separare il titolo dal contenuto successivo */
+  text-align: center; /* Allinea il titolo orizzontalmente al centro */
+  width: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Aggiunge ombra per aumentare contrasto e leggibilità */
+}
+
+/* Riga contenente immagine e testo */
+.riga-nido {
+  display: flex; /* Attiva il layout flessibile per disporre immagine e testo su una riga */
+  flex-wrap: wrap; /* Permette il ritorno a capo su dispositivi più piccoli */
+  gap: 30px; /* Spazio tra le colonne */
+  align-items: center;
+}
+
+/* Colonna dedicata all’immagine */
+.colonna-foto {
+  flex: 1 1 45%; /* Occupa il 45% della larghezza disponibile, adattandosi al layout responsivo */
+  display: flex; /* Permette di centrare l’immagine al suo interno */
+  justify-content: center; /* Centra orizzontalmente l’immagine nella colonna */
+}
+
+/* Stile dell’immagine all’interno della colonna */
+.img-nido-grande {
+  width: 100%;
+  max-width: 400px; /* Limita la dimensione massima dell’immagine per evitare eccessivi ingrandimenti */
+  border-radius: 12px; /* Arrotonda gli angoli dell’immagine */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3); /* Aggiunge ombra per dare profondità all’immagine */
+}
+
+/* Colonna dedicata al testo */
+.colonna-testo {
+  flex: 1 1 50%; /* Occupa il 50% dello spazio disponibile, adattandosi su dispositivi più piccoli */
+  text-align: left; /* Allinea il testo a sinistra per migliorare la leggibilità */
+}
+
+/* Stile dei paragrafi presenti nella colonna testo */
+.colonna-testo p {
+  font-size: 1.15rem; /* Imposta la dimensione del testo per una lettura confortevole */
+  line-height: 1.8; /* Incrementa l’altezza della linea per migliorare la leggibilità */
+  color: #333;
+}
+
+/* Stile del blocco parallax sullo sfondo */
+.blocco-nido.parallax-nido {
+  background-image: url('Immagini/nido.png');
+  background-attachment: fixed; /* Blocca lo sfondo durante lo scroll per creare l’effetto parallasse */
+  background-size: cover; /* Adatta l’immagine per coprire l’intera area del contenitore */
+  background-position: center; /* Centra l’immagine di sfondo */
+  background-repeat: no-repeat; /* Impedisce la ripetizione dell’immagine di sfondo */
+  min-height: 100vh; /* Imposta un’altezza minima pari all’altezza della finestra */
+  display: flex; /* Abilita il layout flessibile per posizionare il contenuto */
+  align-items: center; /* Allinea verticalmente il contenuto al centro */
+  justify-content: center; /* Allinea orizzontalmente il contenuto al centro */
+  padding: 80px 20px; /* Spaziatura interna per mantenere distanza dai bordi */
+}
+/*Fine blocco Nido*/
+
+/*Inizio blocco premio lavoro 2025*/
+.titolo-intervista {
+  font-weight: 900; /* Imposta un peso molto marcato al testo per evidenziare il titolo */
+  font-size: 2.5rem; /* Dimensione significativa del titolo per garantire risalto visivo */
+  color: #5b2c04;
+  text-align: center;
+  letter-spacing: 1px; /* Spaziatura tra lettere per una migliore leggibilità */
+  text-transform: uppercase; /* Converte il testo in lettere maiuscole */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); /* Aggiunge ombra per aumentare il contrasto sullo sfondo */
+  margin-bottom: 30px; /* Spazio inferiore per separare il titolo dagli altri contenuti */
+  font-family: 'Montserrat', sans-serif; /* Font moderno, leggibile e coerente con il resto del layout */
+}
+
+.blocco-intervista-con-img {
+  max-width: 1100px; /* Larghezza massima del contenitore per controllare la leggibilità sui display grandi */
+  margin: 80px auto;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 10px; /* Arrotonda gli angoli del blocco per un effetto visivo più morbido */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Montserrat', sans-serif;
+ 
+}
+/* Layout a righe flessibili per separare immagine e testo */
+.intervista-flex-row {
+  display: flex; /* Attiva il layout flessibile per posizionare gli elementi su righe o colonne */
+  justify-content: space-between; /* Distribuisce lo spazio uniformemente tra gli elementi figli */
+  align-items: flex-start; /* Allinea gli elementi figli all’inizio del contenitore */
+  gap: 40px; /* Distanza orizzontale tra la colonna immagine e la colonna testo */
+  flex-wrap: nowrap; /* Impedisce il ritorno a capo degli elementi su più righe */
+}
+
+/* Colonna dedicata all’immagine nell’intervista */
+.intervista-img-col {
+  flex: 0 0 300px; /* Imposta la larghezza fissa della colonna immagine a 300px */
+}
+
+/* Stile per l’immagine all’interno della colonna */
+.intervista-img-col img {
+  width: 100%; /* Imposta la larghezza massima dell’immagine in base al contenitore */
+  height: auto; /* Mantiene le proporzioni dell’immagine */
+  border-radius: 12px; /* Arrotonda gli angoli dell’immagine */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Aggiunge ombra per creare profondità visiva */
+  display: block; /* Visualizza l’immagine come blocco, evitando spazi indesiderati sotto l’immagine */
+}
+
+/* Colonna dedicata al testo dell’intervista */
+.intervista-testo-col {
+  flex: 1; /* Occupa tutto lo spazio rimanente rispetto alla colonna immagine */
+  min-width: 0; /* Impedisce al contenitore di superare il limite massimo e causare overflow */
+}
+
+/* Stile per il blockquote all’interno della colonna testo */
+.intervista-testo-col blockquote {
+  background-color: #f2f2f2; /* Sfondo grigio chiaro per evidenziare la citazione */
+  padding: 15px 16px; 
+  border-radius: 8px; /* Arrotonda gli angoli del blockquote */
+  color: #3e2608; /* Colore marrone scuro per il testo della citazione */
+  font-style: italic; /* Stile corsivo per distinguere la citazione dal resto del testo */
+  font-size: 1.2rem; /* Dimensione del testo per una migliore leggibilità */
+  line-height: 1.7; /* Altezza delle righe aumentata per leggibilità */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Aggiunge un’ombra leggera per profondità visiva */
+  margin: 0; /* Rimuove il margine predefinito del blockquote */
+}
+
+.titolo-intervista {
+  font-weight: 900; /* Applica un peso molto marcato al testo, conferendo maggiore enfasi visiva */
+  font-size: 2.5rem;
+  color: #5b2c04;
+  text-align: center; /* Allinea il testo orizzontalmente al centro del contenitore */
+  letter-spacing: 1px; /* Aumenta la spaziatura tra i caratteri per migliorare la leggibilità */
+  text-transform: uppercase; /* Trasforma tutto il testo in lettere maiuscole per maggiore impatto visivo */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); /* Applica un’ombra al testo per migliorarne il contrasto e la leggibilità */
+  margin-bottom: 30px; /* Aggiunge spazio inferiore per separare il titolo dagli elementi successivi */
+  font-family: 'Montserrat', sans-serif; /* Imposta un font moderno e leggibile, coerente con il resto del layout */
+}
+
+/* Blocco di testo più lungo, posto sotto l’intervista */
+.testo-lungo-intervista {
+  margin-top: 30px;
+}
+
+/* Stile per i paragrafi all’interno del testo lungo */
+.testo-lungo-intervista p {
+  font-size: 1.1rem; /* Dimensione del testo per una lettura confortevole */
+  color: #333;
+  line-height: 1.7; /* Altezza delle righe aumentata per una lettura più scorrevole */
+  margin-bottom: 1.2rem; /* Spazio inferiore tra paragrafi */
+}
+
+/* Stile per il testo enfatizzato all’interno dei paragrafi */
+.testo-lungo-intervista p em {
+  font-size: 0.9rem; /* Dimensione leggermente più piccola per il testo enfatizzato */
+  color: #5c1c0b;
+  font-style: italic; /* Corsivo per distinguere il testo enfatizzato */
+  font-weight: 500; /* Peso medio per maggiore leggibilità */
+}
+
+.testo-lungo-intervista {
+  margin-top: 30px;
+}
+/*Fine intervista*/
+
+/*Inizio blocco download report*/
+.parallax-report {
+  background-image: url("Immagini/sfondoreport.png"); 
+  background-attachment: fixed; /* Blocca lo sfondo durante lo scorrimento per creare l’effetto voluto */
+  background-size: cover; /* Adatta l’immagine per coprire l’intera area */
+  background-position: center;
+  background-repeat: no-repeat; /* Impedisce la ripetizione dell’immagine di sfondo */
+  min-height: 100vh; /* Imposta un’altezza minima pari all’altezza della finestra */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+/* Overlay bianco trasparente che contiene il contenuto centrale */
+.overlay-download {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px 30px;
+  border-radius: 10px; /* Angoli arrotondati per un effetto visivo più morbido */
+  max-width: 1000px; /* Larghezza massima dell’overlay per controllare il layout su schermi grandi */
+  margin: auto; /* Centra orizzontalmente l’overlay */
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  border: 3px solid #8B4513; /* Bordo marrone per definire meglio i contorni */
+
+}
+
+/* Stile per il titolo del blocco download report */
+.titolo-download {
+  font-weight: 900; /* Peso del carattere molto marcato per dare risalto */
+  font-size: 2.5rem;
+  color: #5b2c04;
+  text-transform: uppercase; /* Trasforma il testo in maiuscolo per maggiore impatto visivo */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  font-family: 'Montserrat', sans-serif; /* Font moderno e leggibile */
+}
+
+/* Testo */
+.testo-download {
+  font-size: 1.2rem; /* Dimensione del testo per una lettura chiara */
+  color: #3e2608;
+  margin-bottom: 30px; /* Spazio inferiore per separare il testo dal pulsante */
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6; /* Altezza della linea aumentata per maggiore leggibilità */
+}
+
+/* Stile per il pulsante di download del report */
+.btn-download {
+  display: inline-block; /* Permette al bottone di essere trattato come blocco ma restare in linea */
+  background-color: #5c1c0b;
+  color: #fff;
+  text-decoration: none; /* Rimuove la sottolineatura tipica dei link */
+  padding: 14px 28px;
+  border-radius: 6px; /* Arrotonda leggermente gli angoli del bottone */
+  font-weight: 600; /* Maggiore spessore per il testo del bottone */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease; /* Effetto fluido al cambio colore */
+}
+
+.btn-download:hover {
+  background-color: #8B4513; /* Cambia il colore di sfondo al passaggio del mouse per effetto interattivo */
+  transform: scale(1.05); /* Leggero ingrandimento al passaggio per dare feedback visivo */
+}
+
+.overlay-download {
+  border: 3px solid #8B4513;
+}
+
+/* Icona accanto al testo nel bottone */
+.icon-pdf {
+  height: 24px;
+  vertical-align: middle; /* Allinea verticalmente l’icona rispetto al testo */
+  margin-right: 8px;
+}
+
+/* Stile per eventuali informazioni aggiuntive sul report */
+.info-report {
+  font-size: 0.9rem; /* Testo leggermente più piccolo per le informazioni secondarie */
+  color: #5c1c0b;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/*Freccia Scroll to Up*/
+#scrollTopBtn {
+  position: fixed;  /* Posiziona il pulsante in modo fisso rispetto alla finestra del browser */
+  bottom: 30px; 
+  right: 30px;
+  z-index: 9999; /* Imposta la priorità di sovrapposizione rispetto ad altri elementi */
+  background: transparent; /* Sfondo trasparente per rendere visibile solo il contenuto e il bordo */
+  border: 2px solid #5c1c0b;
+  border-radius: 50%; /* Rende il pulsante di forma circolare */
+  padding: 10px;
+  cursor: pointer; /* Modifica il cursore per indicare l’interattività */
+  transition: background-color 0.3s, transform 0.3s; /* Applica una transizione fluida alle proprietà specificate */
+  animation: pulse 2s infinite; /*animazione freccia*/
+  box-shadow: 0 0 10px #5c1c0b; /*animazione freccia*/
+}
+
+#scrollTopBtn:hover {
+  background-color: rgba(92, 28, 11, 0.1); /* Colore di sfondo semi-trasparente al passaggio del mouse */
+  transform: scale(1.1); /* Leggero ingrandimento del pulsante al passaggio del mouse */
+}
+
+/*Modifica l'icona della freccia*/
+#scrollTopBtn .icon-arrow {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+/* Abilita lo scorrimento fluido quando si utilizza l’ancoraggio interno */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Definisce l’animazione di pulsazione per il pulsante scroll-to-top */
+@keyframes pulse {
+  0% { transform: scale(1);}
+  50% { transform: scale(1.2);}
+  100% { transform: scale(1);}
+}
+
+/* Applica una transizione uniforme a tutte le proprietà per tutti gli elementi */
+* {
+  transition: all 0.3s ease;
+}
